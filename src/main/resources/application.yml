@@ -3,6 +3,7 @@ spring:
     hibernate:
       ddl-auto: create
 
+
 taller:
   spring:
     ua:
@@ -10,3 +11,5 @@ taller:
         - "L26"
         - "L27"
         - "L28"
+server:
+  port: 9080

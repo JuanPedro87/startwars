@@ -3,7 +3,7 @@ package com.example.start.wars.model;
 /**
  * te genera getter seteer
  */
-import lombok.Data;
+
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

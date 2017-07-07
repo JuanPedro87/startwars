@@ -1,7 +1,6 @@
 package com.example.start.wars.repository;
 
 import com.example.start.wars.model.Film;
-import com.example.start.wars.model.Planet;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,9 +9,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.List;
 
-import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertThat;
 
 /**
  * Created by jpcs1 on 30/06/17.
@@ -64,12 +61,12 @@ public class FilmRepositoryTest {
     }
 
 
-    @Test
-    public void should_print_all()throws Exception {
-        List<Film> all = repository.findAll();
-        for (Film element:all ) {
-            repository.logFilm(element);
-
-        }
-    }
+//    @Test
+//    public void should_print_all()throws Exception {
+//        List<Film> all = repository.findAll();
+//        for (Film element:all ) {
+//            repository.logFilm(element);
+//
+//        }
+//    }
 }

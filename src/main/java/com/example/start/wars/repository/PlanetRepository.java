@@ -2,10 +2,10 @@ package com.example.start.wars.repository;
 
 import com.example.start.wars.model.Planet;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Optional;
 
 /**
  * Created by jpcs1 on 30/06/17.
@@ -13,7 +13,7 @@ import java.util.List;
 @Repository
 public interface PlanetRepository extends JpaRepository<Planet, Long> {
 
-    Planet findByName(String name);
+    Optional<Planet> findByName(String name);
     List<Planet> findByNameContaining(String name);
     List<Planet> findAllByOrderByNameDesc();
     List<Planet> findByPopulationGreaterThan(Long population);
