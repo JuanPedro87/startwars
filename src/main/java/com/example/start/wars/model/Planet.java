@@ -20,7 +20,8 @@ import javax.persistence.Id;
 @Getter
 @Setter
 @NoArgsConstructor
-public class Planet {
+public class
+Planet {
     @Id
     @GeneratedValue
     private Long planetId;

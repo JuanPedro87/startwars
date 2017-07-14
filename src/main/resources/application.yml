@@ -12,4 +12,14 @@ taller:
         - "L27"
         - "L28"
 server:
-  port: 9080
+  port: 9081
+
+
+managment:
+  segurity:
+    enabled: false
+
+security:
+  user:
+    name: user
+    password: pass

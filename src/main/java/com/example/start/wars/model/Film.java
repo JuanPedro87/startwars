@@ -2,6 +2,7 @@ package com.example.start.wars.model;
 
 import lombok.Data;
 import lombok.ToString;
+import org.springframework.hateoas.ResourceSupport;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -13,7 +14,7 @@ import java.util.List;
 @Entity
 @Data
 @ToString(exclude = {"people", "planets"})
-public class Film {
+public class Film extends ResourceSupport{
 
     @Id
     @GeneratedValue
