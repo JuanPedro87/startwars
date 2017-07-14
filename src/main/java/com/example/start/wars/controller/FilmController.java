@@ -27,7 +27,7 @@ public class FilmController {
 
     @RequestMapping(method = RequestMethod.GET, value = "films/search/findAllByOrderByEpisodeIdAsc")
     public @ResponseBody ResponseEntity<Film> callMethod(@Param("releaseDate")
-                                                          @DateTimeFormat(pattern = "yy-mm-dd'T'HH:mm:ss") Date releaseDate) {
+                                                          @DateTimeFormat(pattern = "yyyy-mm-dd'T'HH:mm:ss") Date releaseDate) {
         List<Film> films=filmRepository.findAllByReleaseDateGreaterThan(releaseDate);
         Resources<Film> resources = new Resources<>(films);
 

@@ -41,8 +41,8 @@ public class SegurityConfigurator extends WebSecurityConfigurerAdapter {
         // sin formulario login
         httpSecurity.httpBasic().and()
                 .authorizeRequests()
-                .antMatchers("/planets**").permitAll()
-                .antMatchers("/films**").hasRole("ADMIN")
+                .antMatchers("/films**").permitAll()
+                .antMatchers("/planets**").hasRole("ADMIN")
                 .antMatchers("/peoples**").authenticated();
     }
 
